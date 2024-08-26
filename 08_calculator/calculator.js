@@ -1,17 +1,19 @@
-const add = function() {
-	
+const add = function(num1,num2) {
+	return num1 + num2;
 };
 
-const subtract = function() {
-	
+const subtract = function(num1,num2) {
+	return num1 - num2;
 };
 
-const sum = function() {
-	
+const sum = function(numArr) {
+  let sum = 0;
+	numArr.forEach((num) => {sum += num});
+  return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(numArr) {
+  const productOfAllNums = arr.reduce((total, num) => {return total * num}, 1);
 };
 
 const power = function() {
