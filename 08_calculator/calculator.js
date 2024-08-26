@@ -7,16 +7,14 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(numArr) {
-  let sum = 0;
-	numArr.forEach((num) => {sum += num});
-  return sum;
+ return numArr.reduce((total,num) => {return total + num}, 0);
 };
 
 const multiply = function(numArr) {
-  const productOfAllNums = arr.reduce((total, num) => {return total * num}, 1);
+  return numArr.reduce((total, num) => {return total * num}, 1);
 };
 
-const power = function() {
+const power = function(base,power) {
 	
 };
 
